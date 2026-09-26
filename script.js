@@ -26,6 +26,7 @@ function calculate(operator) {
             result = val1 * val2;
             break;
         case '/':
+            // Handle division by zero
             if (val2 === 0) {
                 resultDiv.textContent = 'Error: Division by zero is not allowed.';
                 resultDiv.classList.add('error');
